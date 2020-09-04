@@ -1,0 +1,113 @@
+.input {
+    text-align: center;
+    height: 7vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+input{
+    height: 7vh;
+    width: 28vw;
+    border-color: grey;
+    border: 1px solid;
+    /* border: 1px solid #007bff; */
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Dosis;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,.2);
+  }
+
+  .scrollbox{
+    overflow: scroll; 
+    height: 500px
+  }
+  .details{
+      font-size: 1.5rem;
+      margin-top: 30px;
+  }
+
+  .moreinfo{
+      background-color: transparent;
+      font-size: 25px;
+      color: black;
+      border: 2px solid black;
+      border-radius: 5px;
+      position: absolute;
+      right: 0%;
+      height: 200px;
+  }
+
+.clear{
+    display: none;
+}
+
+.subcontainer{
+    display: none;
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+.list{
+    display: inline;
+    color: white;
+
+}
+
+.displaysubcontainer{
+    display:block;
+    height: 200px;
+    width: 100%;
+    /* background-color: black; */
+    position: relative;
+}
+
+@font-face {
+    font-family: 'SEGA LOGO FONT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+    }
+  
+#logo {
+    font-family: 'SEGA LOGO FONT';
+    font-weight: 200;
+    color: #0ccac4;
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  
+  .grow {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+  }
+  
+  .grow:hover,
+  .grow:focus {
+    transform: scale(1.05);
+  }
+
+  .scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .inline {
+      /* display: inline-block; */
+      color: white;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .containers, .displaysubcontainer{
+        height: 500px;
+    }
+  }
